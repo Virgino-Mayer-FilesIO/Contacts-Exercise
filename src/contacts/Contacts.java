@@ -12,9 +12,8 @@ public class Contacts {
     }
 
     //getter
-    public void getContact(){
-        System.out.println(this.name + this.phoneNumber);
+    public static String getName() {
+        return name;
     }
-
 
 }
