@@ -9,11 +9,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Scanner;
+import util.Input;
 
 public class ContactsImplementation {
     final static String folder = "data";
     final static String fileName = "data/contacts.txt";
-
 
 
     public static void main(String[] args) {
@@ -28,13 +29,8 @@ public class ContactsImplementation {
         List<String> ContactNamesList = Arrays.asList("Nico", "Roger", "Fer");
 
 
-
-
-
-
-
-        if (!Files.exists(dirPath)) {
-            try {
+        try {
+            if (!Files.exists(dirPath)) {
                 //does everything
 
                 //create data directory
@@ -55,26 +51,14 @@ public class ContactsImplementation {
                 List<String> tempList = new ArrayList<>();
 
                 //for to print
-                for (int i = 0; i < contactListLine.size(); i +=1){
+                for (int i = 0; i < contactListLine.size(); i += 1) {
                     System.out.println((i + 1) + ": " + contactListLine.get(i));
                 }
-
-
-
-
-            } catch (IOException e) {
-                //block of code to handle errors
-                e.printStackTrace();
-                System.out.println("Directory creation failed.");
             }
-
-
-
-
-
-
-
-
+        } catch (IOException e) {
+            //block of code to handle errors
+            e.printStackTrace();
+            System.out.println("Directory creation failed.");
         }
     }
 }
