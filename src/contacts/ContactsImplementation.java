@@ -16,6 +16,8 @@ public class ContactsImplementation {
 
 
 
+
+
     public static void main(String[] args) {
         //make directory path object
         Path dirPath = Paths.get(folder);
@@ -67,13 +69,6 @@ public class ContactsImplementation {
                 e.printStackTrace();
                 System.out.println("Directory creation failed.");
             }
-
-
-
-
-
-
-
 
         }
     }
