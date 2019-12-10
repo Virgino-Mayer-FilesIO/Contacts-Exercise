@@ -1,12 +1,15 @@
 package contacts;
 
+import java.nio.file.Files;
+
 public class Contacts {
     protected static String name;
     protected static String phoneNumber;
 
 
+
     //constructor
-    public void setContact(String name, String phoneNumber){
+    public void setContact(String name, String phoneNumber) {
         this.name = name;
         this.phoneNumber = phoneNumber;
     }
@@ -15,5 +18,8 @@ public class Contacts {
     public static String getName() {
         return name;
     }
+
+
+
 
 }
